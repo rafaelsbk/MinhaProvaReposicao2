@@ -28,11 +28,6 @@ class MainActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
 
 
-
-
-
-
-
         ///// PERMISSAO PRA ACESSAR O STORAGE EXTERNO
         permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()){
             permissions -> readPermissionOk = permissions[Manifest.permission.READ_EXTERNAL_STORAGE]?:readPermissionOk
