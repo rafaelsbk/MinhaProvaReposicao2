@@ -7,7 +7,10 @@ import android.os.Bundle
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.example.minhaprovareposicao.databinding.FragmentHomeBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +24,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
+
+
+
+
+        ///// PERMISSAO PRA ACESSAR O STORAGE EXTERNO
         permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()){
             permissions -> readPermissionOk = permissions[Manifest.permission.READ_EXTERNAL_STORAGE]?:readPermissionOk
             writePermissionOk = permissions[Manifest.permission.WRITE_EXTERNAL_STORAGE]?: writePermissionOk
