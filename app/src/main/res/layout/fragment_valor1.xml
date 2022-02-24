@@ -33,7 +33,7 @@
             android:layout_marginTop="256dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@{viewmodel.setText1}"
+            android:text="Texto"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
