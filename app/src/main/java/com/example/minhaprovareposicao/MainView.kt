@@ -1,4 +1,8 @@
 package com.example.minhaprovareposicao
 
-class MainView {
+import androidx.lifecycle.ViewModel
+
+class MainView : ViewModel(){
+
+
 }
